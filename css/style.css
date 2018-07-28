@@ -57,3 +57,22 @@ a {
     font-size: 2em; 
 }
 
+section {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+
+/*About me section*/
+.about-me .about-me-figure img {
+    max-height: 350px;
+}
+
+
+
+
+
