@@ -82,7 +82,7 @@ p {
     line-height: 1.4;
 }
 
-/*About me section*/
+/*About me style*/
 .about-me .about-me-figure img {
     max-height: 350px;
     border: 10px solid #fff;
@@ -93,14 +93,85 @@ p {
     text-align: center;
 }
 
+/*Skills style*/
 .skills .container {
-    display: flex;
     justify-content: space-evenly;
 }
 
 .fab {
-    padding: 50px;
-    transform: scale(3,3);
+    padding: 30px;
+    font-size: 4em;
+}
+
+figcaption{
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*Portfolio style*/
+.my-portfolio .portfolio-pic {
+    margin: 0; 
+    flex-basis: 33.3333%;
+    max-height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-pic .portfolio-mask{
+    position: absolute;
+    background-color: rgba(33, 59, 80, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+.container .portfolio-pic img{
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+    object-fit: cover;
+
+}
+
+
+/*
+.portfolio-mask {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+*/
+
+.portfolio-mask:hover {
+    opacity: 1;
+}
+
+.my-portfolio .portfolio-pic:hover .portfolio-mask {
+    
+} 
+
+.my-portfolio .container .portfolio-content {
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.3em;
+    
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.fa-link {
+    color:  #1ac056;
+    font-size: 2em;
 }
 
 
