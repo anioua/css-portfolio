@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: white;
+    color: #291f1a;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -66,11 +66,43 @@ h2 {
     font-size: 1.8em;
 }
 
+.container {
+    display: flex;
+    max-width: 1170px;
+    margin: auto;
+    background-color: #f9fcfe;
+    padding: 0 15px;
+}
+
+.container .col-1-2 {
+    flex-basis: 50%;
+}
+
+p {
+    line-height: 1.4;
+}
 
 /*About me section*/
 .about-me .about-me-figure img {
     max-height: 350px;
+    border: 10px solid #fff;
+    border-radius: 15px;
 }
+
+.about-me .about-me-figure {
+    text-align: center;
+}
+
+.skills .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fab {
+    padding: 50px;
+    transform: scale(3,3);
+}
+
 
 
 
