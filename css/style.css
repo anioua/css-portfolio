@@ -38,8 +38,16 @@ span {
     z-index: 999999;
 }
 
+.main-nav #drop {
+    display: none;
+}
+
+.main-nav label {
+    display: none;
+}
+
 .main-nav .menu-item {
-    display: inline-block
+    display: inline-block;
 }
 
 .main-nav .menu-item a {
@@ -84,8 +92,8 @@ h2 {
     display: flex;
     max-width: 1170px;
     margin: auto;
-
-    padding: 0 15px;
+    padding: 0 15px;    
+    flex-wrap: wrap;
 }
 
 .container .col-1-2 {
@@ -94,6 +102,10 @@ h2 {
 
 p {
     line-height: 1.4;
+}
+
+figure {
+    margin: 0;
 }
 
 /*About me style*/
@@ -274,6 +286,79 @@ h4 {
     transition: all .3s;
 }
 
+/*==================RWD===============*/
+
+@media (max-width: 1170px) {
+   .my-portfolio .portfolio-pic {
+        flex-basis: 50%;
+    }
+    .my-portfolio .portfolio-pic:last-child {
+        flex-basis: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+   .container .col-1-2 {
+        flex-basis: 100%;
+    }
+    
+    .main-nav{
+        display: block;
+    }
+    
+    .main-nav .menu-item {
+        display: block;
+        padding: 15px;
+        text-align: right;
+    }
+    
+    .main-nav .menu-item a{
+        padding: 0;
+    }
+    
+    .main-nav label {
+        display: block;
+        font-size: 1.5em;
+        color: #1ac056;
+        text-align: right;
+        padding: 15px;
+        cursor: pointer;
+    }
+    
+    .menu-list {
+        display: none;
+    }
+    
+    .main-nav #drop:checked + .menu-list {
+        display: block;
+    }
+    
+    .skills .skill-item {
+        flex-basis: 50%;
+    }
+    
+    .my-portfolio .portfolio-pic {
+        flex-basis: 50%;
+        margin-bottom: 45px;
+    }
+    
+    .contact-footer, .contact-footer h2{
+        text-align: center;      
+    }
+    .contact-footer .social-icons{
+        margin-bottom: 35px;
+}
+    .contact-footer .contact-form input,
+    .contact-footer .contact-form textarea {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .skills .skill-item {
+        flex-basis: 100%;
+    }   
+}
 
 
 
